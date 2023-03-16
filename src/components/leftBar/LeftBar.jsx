@@ -2,8 +2,8 @@ import React from "react";
 import Dashboards from "./Dashboards";
 import { leftBarMenus ,leftBarProjects } from "../../data"
 
-export default function LeftBar({sideBar,setSideBar}) {
-
+export default function LeftBar() {
+  const [sideBar,setSideBar]=useState(false)
   return (
     <>
       <div className="overflow-y-scroll  border-r-[1px] border-[#E9EBF0] ">

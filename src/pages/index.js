@@ -7,12 +7,12 @@ import RightBar from '../components/rightBar/RightBar'
 import { BacklogTasks,Done,Inprogress,ToDoTasks } from "../data";
 
 export default function Home() {
-  const [sideBar,setSideBar]=useState(false)
+  
   return (
     <>
   
     <div className='flex flex-col lg:flex-row bg-[#F7F8FA] min-h-screen"'>
-      <SideBar sideBar={sideBar} setSideBar={setSideBar}/>
+      <SideBar />
       <div className='flex-1 false lg:block ' style={{transform: "translateX(0vw) translateZ(0px)"}}>
          <NavBar/>
          <TaskBoards/>
