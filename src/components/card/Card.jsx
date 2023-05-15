@@ -16,7 +16,7 @@ export default function Card({task}) {
           <div className='flex gap-1 items-center'>
                <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full border-[1px] border-[#EBEEF2]'>{task.id}</p>
                {task.type && <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full text-[#2563EB] bg-[#2563EB] bg-opacity-10'>{task.type}</p>}
-               {task.status==="Backlog" &&<p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full bg-opacity-10 text-[#CA8A04] bg-[#CA8A04]'>Backlog</p>}
+               {task.status==="Backlog" && <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full bg-opacity-10 text-[#CA8A04] bg-[#CA8A04]'>Backlog</p>}
               {task.status==="In Progress" && <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full bg-opacity-10 text-[#9333EA] bg-[#9333EA]'>In Progress</p>}
               { task.status==="Done" && <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full bg-opacity-10 text-[#16A34A] bg-[#16A34A]'>Done</p>}
               {task.status==="To Do" && <p className='text-[8px] font-bold px-[8px] py-[5px] rounded-full bg-opacity-10 text-[#DB2777] bg-[#DB2777]'>To Do</p>}

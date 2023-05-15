@@ -1,9 +1,6 @@
   import React from 'react'
   import Images from '../AllImages/Images'
   import {images,taskBoardsMenus } from "../../data"
-
-  
-
   export default function TaskBoards() {
     return (
       <>
